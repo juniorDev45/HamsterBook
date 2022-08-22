@@ -10,6 +10,7 @@ import { ProposalsComponent } from './proposals/proposals.component';
 import { ProfileRowComponent } from './profile-row/profile-row.component';
 import { FriendBoxComponent } from './friend-box/friend-box.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FriendService } from './friend.service';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatIconModule
 
   ],
+
+  // Wäre der Friend-Service nicht mit dem Dekorator Injectable aufgeführt, dann müsste hier der Name des Services hinterlegt werden.
   providers: [],
   bootstrap: [AppComponent]
 })

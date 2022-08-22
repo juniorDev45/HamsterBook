@@ -1,17 +1,15 @@
 <app-header></app-header>
 
+
 <div class="flexrow">
     <div class="container">
 
         <app-friend-box></app-friend-box>
 
-        <app-hamster-card 
-        *ngFor="let i of [0,1,2,3]"
-        [img]="postImages[i]" 
-        [text]="postTexte[i]">
-    
+        <app-hamster-card *ngFor="let i of [0,1,2,3]" [img]="postImages[i]" [text]="postTexte[i]">
+
         </app-hamster-card>
- 
+
     </div>
     <app-proposals></app-proposals>
 

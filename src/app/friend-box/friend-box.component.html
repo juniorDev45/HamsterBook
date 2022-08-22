@@ -1,14 +1,12 @@
 <div class="standard-card padding-16 friendrow">
 
-  
-<div *ngIf="fs.names.length === 0">
-      Du hast noch keine Freunde :-(
+      <!-- Der Text wird angezeigt, wenn noch keine Freunde vorhanden sind. -->
+      <div *ngIf="fs.names.length === 0">
+            Du hast noch keine Freunde :-(
+      </div>
 
-</div>
-
-   <div class="friend" *ngFor="let name of fs.names; let i=index">
-        <img src="{{ fs.images[i] }}">  {{ name }}
-   </div>
-
-
+      <!-- Die Daten von vorhandenen Freunden werden angezeigt. -->
+      <div class="friend" *ngFor="let name of fs.names; let i=index">
+            <img src="{{ fs.images[i] }}"> {{ name }}
+      </div>
 </div>

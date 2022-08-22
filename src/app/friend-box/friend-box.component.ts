@@ -8,8 +8,8 @@ import { FriendService } from '../friend.service';
 })
 export class FriendBoxComponent implements OnInit {
 
-  
-  
+
+  // Über eine Konstuktor Dependency Injection befüllt der Service die Arrays und stellt sie der Komponente zur Verfügung.
   constructor(public fs: FriendService) { }
 
   ngOnInit(): void {
